@@ -36,22 +36,22 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             text=START_MSG.format(first=query.from_user.first_name),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("ʜᴇʟᴘ", callback_data='help'),
-                 InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data='about')],
-                [InlineKeyboardButton('ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Anime_X_Hunters'),
-                 InlineKeyboardButton('ᴏɴɢᴏɪɴɢ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Ongoing_Anime_X_Hunter')],
+                [InlineKeyboardButton("Help", callback_data='help'),
+                 InlineKeyboardButton("About", callback_data='about')],
+                [InlineKeyboardButton('Backup Channel', url='https://t.me/AIO_Backup'),
+                 InlineKeyboardButton('Get Paid Apps For FREE', url='https://t.me/Pro_xAPK')],
                 [InlineKeyboardButton("ᴄʟᴏꜱᴇ", callback_data='close')]
             ])
         )
     elif data == "premium":
         await query.message.edit_text(
-            text=f"Premium Benefits & Perks\nDirect Channel Links, No Ad Links\nSpecial Access In Events\n\nPricing Rates\n7 Days - INR 80\n1 Month - INR 160\n3 Months - INR 270\n6 Months - INR 600\n9 Months - INR 800\n12 Months - INR 1000\n\nWant To Buy?\nPay Using UPI farmanansari@fam\nSend Screenshot to @Its_Wriotheslay\n\nWe Have Limited Seats For Premium Users",
+            text=f"Premium Benefits & Perks\nDirect Channel Links, No Ad Links\nSpecial Access In Events\n\nPricing Rates\n7 Days - ₹70\n1 Month - ₹150\n3 Months - ₹250\n6 Months - 580\n9 Months - 780\n12 Months - ₹950\n\nWant To Buy?\nPay Using UPI »»» <code>soutick@fam</code>\nSend Screenshot to @Soutick_09\n\nWe Have Limited Seats For Premium Users",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Owner", url="https://t.me/Its_Wriotheslay"),
-                        InlineKeyboardButton("Main Channel", url="https://t.me/Cultured_Nation")
+                        InlineKeyboardButton("Owner", url="https://t.me/Soutick_09"),
+                        InlineKeyboardButton("Main Channel", url="https://t.me/AIO_Backup")
                     ],
                     [
                         InlineKeyboardButton("🔒 Close", callback_data="close")
