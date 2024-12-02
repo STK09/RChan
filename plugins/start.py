@@ -136,6 +136,9 @@ async def start_command(client: Client, message: Message):
                     mention=message.from_user.mention,
                     id=message.from_user.id
                 ),
+                reply_markup=reply_markup,
+
+            )
         except Exception as e:
             print(f"Error replying to message: {e}")
         return
