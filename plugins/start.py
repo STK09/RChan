@@ -37,7 +37,7 @@ async def start_command(client: Client, message: Message):
     if len(text) > 7:
         try:
             basic = text.split(" ", 1)[1]
-            if basic.startswith("yu3elk"):
+            if basic.startswith("Soutick"):
                 base64_string = basic[6:-1]
             else:
                 base64_string = text.split(" ", 1)[1]
@@ -47,7 +47,7 @@ async def start_command(client: Client, message: Message):
             return
 
         is_user_premium = await is_premium(user_id)
-        if not is_user_premium and user_id != OWNER_ID and not basic.startswith("yu3elk"):
+        if not is_user_premium and user_id != OWNER_ID and not basic.startswith("Soutick"):
             await short_url(client, message, base64_string)
             return
 
@@ -152,7 +152,7 @@ REPLY_ERROR = "<code>Use this command as a reply to any telegram message without
 #=====================================================================================##
 async def short_url(client: Client, message: Message, base64_string):
     try:
-        prem_link = f"https://t.me/{client.username}?start=yu3elk{base64_string}7"
+        prem_link = f"https://t.me/{client.username}?start=Soutick{base64_string}09"
         short_link = get_short(prem_link)
 
         buttons = [
@@ -160,7 +160,7 @@ async def short_url(client: Client, message: Message, base64_string):
                 InlineKeyboardButton(text="Click to download your file", url=short_link)
             ],
             [
-                InlineKeyboardButton(text="How to Open", url="https://t.me/+sWjn-J89xaVhMDAx"),
+                InlineKeyboardButton(text="How to Open", url="https://t.me/+75PHDBuMxzFkMTA1"),
                 InlineKeyboardButton(text="Premium", callback_data="premium")
             ]
         ]
@@ -240,7 +240,7 @@ async def my_plan(client: Client, message: Message):
     if is_user_premium:
         await message.reply_text("Ads : Disable\nPremium : Unlocked\n\nNice Dude you're a premium user..!")
     else:
-        await message.reply_text("Ads : Enable\nPremium : Locked\n\nUnlock Premium to get more benefits\nContact - @Okabe_xRintarou..!")
+        await message.reply_text("Ads : Enable\nPremium : Locked\n\nUnlock Premium to get more benefits\nContact - @Soutick_09 ..!")
 
 @Bot.on_message(filters.command('users') & filters.private & filters.user(OWNER_ID))
 async def get_users(client: Bot, message: Message):
