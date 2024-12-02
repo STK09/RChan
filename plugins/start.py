@@ -129,10 +129,13 @@ async def start_command(client: Client, message: Message):
         try:
             await message.reply_photo(
                 photo=START_PIC,
-                caption = """<b>👇 Click On Download Button</b>""",
-                reply_markup=reply_markup,
-
-            )
+                caption=START_MSG.format(
+                    first=message.from_user.first_name,
+                    last=message.from_user.last_name,
+                    username=None if not message.from_user.username else '@' + message.from_user.username,
+                    mention=message.from_user.mention,
+                    id=message.from_user.id
+                ),
         except Exception as e:
             print(f"Error replying to message: {e}")
         return
