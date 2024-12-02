@@ -129,13 +129,7 @@ async def start_command(client: Client, message: Message):
         try:
             await message.reply_photo(
                 photo=START_PIC,
-                caption=START_MSG.format(
-                    first=message.from_user.first_name,
-                    last=message.from_user.last_name,
-                    username=None if not message.from_user.username else '@' + message.from_user.username,
-                    mention=message.from_user.mention,
-                    id=message.from_user.id
-                ),
+                caption = """<b>👇 Click On Download Button</b>""",
                 reply_markup=reply_markup,
 
             )
@@ -168,9 +162,7 @@ async def short_url(client: Client, message: Message, base64_string):
 
         await message.reply_photo(
             photo=START_PIC,
-            caption=SHORT_MSG.format(
-                total_count="N/A"
-            ),
+            caption = """<b>👇 Click On Download Button</b>""",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
 
