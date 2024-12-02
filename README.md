@@ -1,8 +1,8 @@
-# Made With ♥️ By Soutick 
+## Made With ♥️ By Soutick 
 
 ![image](https://envs.sh/YyV.jpg)
 
-## A Telegram File sharing bot you can access files through specific links..
+## By @AIO_Backup
 
 ##
 
