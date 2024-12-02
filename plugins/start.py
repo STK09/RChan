@@ -156,13 +156,14 @@ async def short_url(client: Client, message: Message, base64_string):
         short_link = get_short(prem_link)
 
         buttons = [
+          [
+                InlineKeyboardButton(text="DOWNLOAD", url=short_link),
+                InlineKeyboardButton(text="TUTORIAL", url="https://t.me/HowToDownload_09/27")
+          ],
             [
-                InlineKeyboardButton(text="Click to download your file", url=short_link)
-            ],
-            [
-                InlineKeyboardButton(text="How to Open", url="https://t.me/+75PHDBuMxzFkMTA1"),
-                InlineKeyboardButton(text="Premium", callback_data="premium")
+                InlineKeyboardButton(text="PREMIUM", callback_data="premium")
             ]
+            
         ]
 
         await message.reply_photo(
