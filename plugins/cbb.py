@@ -40,7 +40,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                  InlineKeyboardButton("About", callback_data='about')],
                 [InlineKeyboardButton('Backup Channel', url='https://t.me/AIO_Backup'),
                  InlineKeyboardButton('Get Paid Apps For FREE', url='https://t.me/Pro_xAPK')],
-                [InlineKeyboardButton("ᴄʟᴏꜱᴇ", callback_data='close')]
+                [InlineKeyboardButton("Close", callback_data='close')]
             ])
         )
     elif data == "premium":
