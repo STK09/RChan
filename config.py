@@ -47,7 +47,7 @@ SHORT_MSG = "Your Link is down here click on Short URL.."
 START_MSG = os.environ.get("START_MESSAGE", "<b>Ara! Ara! {first}! 💥\n\nI am That Bot Who can Make Your Day Happy 😂...!\n\n Made With ♥️ By <a href=https://t.me/AIO_Backup>AIO Backup</a></b>")
 try:
     ADMINS=[5827289728]
-    for x in (os.environ.get("ADMINS", "5827289728 5413708222 7272399911").split()):
+    for x in (os.environ.get("ADMINS", "5827289728 7272399911").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
