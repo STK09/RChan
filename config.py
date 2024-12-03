@@ -7,7 +7,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7605638686:AAEyLE79-L50tuXcB7qnyaTB7-r1kXamFCg")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7605638686:AAEp0Ue_wrwVaEFese33Y8n6BlvrqYRwLZE")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "28450765"))
@@ -30,7 +30,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
 FORCESUB_CHANNEL = int(os.environ.get("FORCESUB_CHANNEL", "-1002118318196"))
-FORCESUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "-1002271125915"))
+FORCESUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "-1002423211222"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -73,7 +73,7 @@ USER_REPLY_TEXT = "<i>What Do You Think that I am Your Notepad? Why You Message 
 
 AUTO_DEL = os.environ.get("AUTO_DEL", "True")
 DEL_TIMER = int(os.environ.get("DEL_TIMER", "300"))
-DEL_MSG = "<b>This File is deleting automatically in {time} 😨. Forward in your Saved Messages 💀...!</b>"
+DEL_MSG = ""
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(5827289728)
