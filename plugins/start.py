@@ -37,7 +37,7 @@ async def start_command(client: Client, message: Message):
     if len(text) > 7:
         try:
             basic = text.split(" ", 1)[1]
-            if basic.startswith("Soutick"):
+            if basic.startswith("yu3elk"):
                 base64_string = basic[6:-1]
             else:
                 base64_string = text.split(" ", 1)[1]
@@ -47,7 +47,7 @@ async def start_command(client: Client, message: Message):
             return
 
         is_user_premium = await is_premium(user_id)
-        if not is_user_premium and user_id != OWNER_ID and not basic.startswith("Soutick"):
+        if not is_user_premium and user_id != OWNER_ID and not basic.startswith("yu3elk"):
             await short_url(client, message, base64_string)
             return
 
@@ -152,7 +152,7 @@ REPLY_ERROR = "<code>Use this command as a reply to any telegram message without
 #=====================================================================================##
 async def short_url(client: Client, message: Message, base64_string):
     try:
-        prem_link = f"https://t.me/{client.username}?start=Soutick{base64_string}"
+        prem_link = f"https://t.me/{client.username}?start=yu3elk{base64_string}"
         short_link = get_short(prem_link)
 
         buttons = [
