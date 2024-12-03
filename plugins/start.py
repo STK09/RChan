@@ -152,7 +152,7 @@ REPLY_ERROR = "<code>Use this command as a reply to any telegram message without
 #=====================================================================================##
 async def short_url(client: Client, message: Message, base64_string):
     try:
-        prem_link = f"https://t.me/{client.username}?start=Soutick{base64_string}09"
+        prem_link = f"https://t.me/{client.username}?start=Soutick{base64_string}"
         short_link = get_short(prem_link)
 
         buttons = [
