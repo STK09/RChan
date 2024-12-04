@@ -7,7 +7,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7605638686:AAEp0Ue_wrwVaEFese33Y8n6BlvrqYRwLZE")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7605638686:AAHhcsG26Gl6Iuh6S5-KqbYM66IhhpYapV4")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "28450765"))
@@ -65,8 +65,8 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 #Short Url or Api
-SHORT_URL = os.environ.get("SHORTNER_URL", "publicearn.in")
-SHORT_API = os.environ.get("SHORTNER_API", "7e1cd49a083d30719c42f14e37e3716694174d8d")
+SHORT_URL = os.environ.get("SHORTNER_URL", "shortxlinks.com")
+SHORT_API = os.environ.get("SHORTNER_API", "26df87ec5ff94513380db28b159e1e3642896608")
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "<i>What Do You Think that I am Your Notepad? Why You Message Here?</i>"
