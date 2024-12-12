@@ -39,7 +39,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 [InlineKeyboardButton("Help", callback_data='help'),
                  InlineKeyboardButton("About", callback_data='about')],
                 [InlineKeyboardButton('Backup Channel', url='https://t.me/AIO_Backup'),
-                 InlineKeyboardButton('Get Paid Apps For FREE', url='https://t.me/Pro_xAPK')],
+                 InlineKeyboardButton('Developer', url='https://t.me/Soutick_09')],
                 [InlineKeyboardButton("Close", callback_data='close')]
             ])
         )
