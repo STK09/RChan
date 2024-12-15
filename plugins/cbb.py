@@ -45,7 +45,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         )
     elif data == "premium":
         await query.message.edit_text(
-            text=f"Premium Benefits & Perks\nDirect Channel Links, No Ad Links\nSpecial Access In Events\n\nPricing Rates\n7 Days - ₹70\n1 Month - ₹150\n3 Months - ₹250\n6 Months - 580\n9 Months - 780\n12 Months - ₹950\n\nWant To Buy?\nPay Using UPI »»» <code>soutick@fam</code>\nSend Screenshot to @Soutick_09\n\nWe Have Limited Seats For Premium Users",
+            text=f"Premium Benefits & Perks\nDirect Channel Links, No Ad Links\nSpecial Access In Events\n\nPricing Rates\n1 Day - ₹10 Only\n7 Days - ₹70\n1 Month - ₹150 (50% Discount)\n3 Months - ₹250 (72% Discount) [Popular]\n\nWant To Buy?\nPay Using UPI »»» <code>soutick@fam</code>\nSend Screenshot to @Soutick_09\n\nWe Have Limited Seats For Premium Users",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
