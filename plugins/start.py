@@ -163,7 +163,7 @@ async def short_url(client: Client, message: Message, base64_string):
 
         await message.reply_photo(
             photo=START_PIC,
-            caption="<b>👇 Click On Download Button</b>",
+            caption="<b><i>🔴 Now Premium Available at ₹10 Only</i>\n\n👇 Click On Download Button</b>",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
 
