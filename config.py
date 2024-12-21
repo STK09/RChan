@@ -40,7 +40,7 @@ FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/CDA.jpg")
 
 #text
 HELP_TXT = "<b>Hello Dude 😎!\n\nTo use this bot you just have to join both channels that's it..\nWatch Tutorial to Open Link »»» <a href=https://t.me/+75PHDBuMxzFkMTA1>CLICK HERE</a></b>"
-ABOUT_TXT = """<b>○ Creator: <a href=https://t.me/Soutick_09>Soutick</a>\n○ Backup Channel: <a href=https://t.me/AIO_Backup>AIO Backup</a>\n○ Best Friend: <a href=tg://settings>This Person</a>\n○ Get Paid Apps For Free: @Pro_xAPK</b>"""
+ABOUT_TXT = """<b>○ Creator: <a href=https://t.me/Soutick_09>Soutick</a>\n○ Backup Channel: <a href=https://t.me/AIO_Backup>AIO Backup</a>\n○ Best Friend: <a href=tg://settings>This Person</a>\n○ Watch Online Anime: <a href=https://anitown4u.com>AniTown4U</a></b>"""
 SHORT_MSG = "Your Link is down here click on Short URL.."
 
 #start message
@@ -72,7 +72,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "<i>What Do You Think that I am Your Notepad? Why You Message Here?</i>"
 
 AUTO_DEL = os.environ.get("AUTO_DEL", "True")
-DEL_TIMER = int(os.environ.get("DEL_TIMER", "300"))
+DEL_TIMER = int(os.environ.get("DEL_TIMER", "120"))
 DEL_MSG = ""
 
 ADMINS.append(OWNER_ID)
