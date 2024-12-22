@@ -7,7 +7,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7605638686:AAF3n-gBnIotfGD4Npo0OaT60LxGTwjxMfI")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7750309552:AAFCIezbczee3zUYGkN8Ok9UUkvf7i-ftq0")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "28450765"))
@@ -16,7 +16,7 @@ APP_ID = int(os.environ.get("APP_ID", "28450765"))
 API_HASH = os.environ.get("API_HASH", "36f00f11f9d5c65e69b81fd804453a93")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002377657105"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002381900764"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "5827289728"))
@@ -30,13 +30,13 @@ DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
 FORCESUB_CHANNEL = int(os.environ.get("FORCESUB_CHANNEL", "-1002470658194"))
-FORCESUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "-1002282888769"))
+FORCESUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "-1002118318196"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #pics
-START_PIC = os.environ.get("START_PIC", "https://envs.sh/YVM.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/CDA.jpg")
+START_PIC = os.environ.get("START_PIC", "https://i.ibb.co/2FC0zkz/image.jpg")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://i.ibb.co/jLmKv4S/image.jpg")
 
 #text
 HELP_TXT = "<b>Hello Dude 😎!\n\nTo use this bot you just have to join both channels that's it..\nWatch Tutorial to Open Link »»» <a href=https://t.me/+75PHDBuMxzFkMTA1>CLICK HERE</a></b>"
@@ -65,8 +65,8 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 #Short Url or Api
-SHORT_URL = os.environ.get("SHORTNER_URL", "shortxlinks.com")
-SHORT_API = os.environ.get("SHORTNER_API", "26df87ec5ff94513380db28b159e1e3642896608")
+SHORT_URL = os.environ.get("SHORTNER_URL", "rglinks.com")
+SHORT_API = os.environ.get("SHORTNER_API", "618057b1a7bd8c4962193f966927240398fe9faa")
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "<i>What Do You Think that I am Your Notepad? Why You Message Here?</i>"
